@@ -21,6 +21,11 @@ body {
 .listimg {
   align-items: center;
   width: 1.3125rem;
+
+  &-menu {
+    align-items: center;
+    width: 1.3125rem;
+  }
 }
 
 .navigation {
@@ -43,6 +48,22 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+  }
+
+  @media screen and (width >= 800px) {
+    #listimg-menu {
+      display: none;
+    }
+  }
+  @media screen and (width <= 800px) {
+    &_list-icon {
+      display: none;
+    }
+
+    #listimg-menu {
+      display: visible;
+      width: 1.3125rem;
+    }
   }
 }
 
@@ -157,16 +178,16 @@ li {
 }
 
 .slide_pagination > li {
-  font-size: 25px;
+  font-size: 35px;
 
   /* 현재 슬라이드가 아닌 것은 투명도 부여 */
-  color: #7fb5ff88;
+  color: #342628;
   cursor: pointer;
 }
 
 .slide_pagination > li.active {
   /* 현재 슬라이드 색상은 투명도 없이 */
-  color: #7fb5ff;
+  color: #f7f4ef;
 }
 
 .slide_item_duplicate {
