@@ -1,0 +1,23 @@
+* ::before ::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #342628;
+  background-color: #f7f4ef;
+}
+
+h1 {
+  margin-bottom: 4.5rem;
+  text-align: center;
+}
+
+.memerealimg {
+  width: 100%;
+  margin-bottom: 1.875rem;
+  text-align: center;
+}

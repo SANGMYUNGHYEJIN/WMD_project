@@ -1,0 +1,61 @@
+@charset "UTF-8";
+@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap";
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+/* css는 나중에 쓴 코드가 더 강합니다. */
+.card {
+  max-width: 25rem;
+  height: 42rem;
+  overflow-x: hidden;
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  background-color: #f7f4ef;
+}
+
+.card:first-child {
+  margin-top: 0;
+}
+
+.card__img {
+  width: 100%;
+}
+
+.card__p {
+  margin-top: 2rem;
+}
+
+.card__title {
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+.card__subtitle {
+  margin-block: 0.17rem;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+.card__bottom .card__title {
+  font-weight: 400;
+}
+
+/* .card__bottom > .card__title {
+  font-weight: 400;
+} */
+.card__bottom .card__subtitle {
+  margin-top: 0;
+}
